@@ -13,8 +13,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import pl.s2devs.person.model.Client;
-import pl.s2devs.person.repository.ClientRepository;
+import pl.s2devs.person.model.Person;
+import pl.s2devs.person.repository.PersonRepository;
 
 @SpringBootApplication
 public class McServerApplication {
@@ -27,7 +27,7 @@ public class McServerApplication {
     class WebSecurityConfiguration extends GlobalAuthenticationConfigurerAdapter {
 
         @Autowired
-        ClientRepository userRepository;
+        PersonRepository userRepository;
 
         @Override
         public void init(AuthenticationManagerBuilder auth) throws Exception {
@@ -37,7 +37,7 @@ public class McServerApplication {
         @Bean
         UserDetailsService userDetailsService() {
             return userEmail -> {
-                Client client = userRepository.findByEmail(userEmail);
+                Person client = userRepository.findByEmail(userEmail);
                 if (client != null) {
                     return new org.springframework.security.core.userdetails.User(client.getEmail(),
                             client.getPassword(),

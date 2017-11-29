@@ -2,14 +2,14 @@ package pl.s2devs.person.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.s2devs.person.model.Client;
+import pl.s2devs.person.model.Person;
 
 /**
  * Created by rafal on 14.11.17.
  */
 @Repository
-public interface ClientRepository extends JpaRepository<Client, Long> {
+public interface PersonRepository extends JpaRepository<Person, Long> {
 
-    Client findByEmail(String email);
+    Person findByEmail(String email);
 
 }

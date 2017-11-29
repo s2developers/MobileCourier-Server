@@ -14,6 +14,7 @@ public class Person {
 
     private String email;
     private String password;
+    private String role;
 
     @OneToOne
     @JoinColumn(name = "details_id")
@@ -49,5 +50,13 @@ public class Person {
 
     public void setPersonDetails(PersonDetails personDetails) {
         this.personDetails = personDetails;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

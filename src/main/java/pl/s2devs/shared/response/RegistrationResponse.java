@@ -1,6 +1,7 @@
 package pl.s2devs.shared.response;
 
-import pl.s2devs.shared.model.Person;
+
+import pl.s2devs.person.model.Person;
 
 /**
  * Created by rafal on 14.11.17.
@@ -8,7 +9,7 @@ import pl.s2devs.shared.model.Person;
 public class RegistrationResponse {
 
     public enum Code {
-        EMAIL_TAKEN, CLIENT_REGISTERED
+        EMAIL_TAKEN, PERSON_REGISTERED
     }
 
     private Person person;
