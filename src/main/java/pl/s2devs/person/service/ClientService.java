@@ -1,9 +1,9 @@
-package pl.s2devs.person.client.service;
+package pl.s2devs.person.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.s2devs.person.client.model.Client;
-import pl.s2devs.person.client.repository.ClientRepository;
+import pl.s2devs.person.model.Client;
+import pl.s2devs.person.repository.ClientRepository;
 
 import static pl.s2devs.shared.response.RegistrationResponse.Code;
 

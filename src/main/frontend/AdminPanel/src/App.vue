@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div clientId="app">
   <h1>{{title}}</h1>
   <loginForm />
 </div>

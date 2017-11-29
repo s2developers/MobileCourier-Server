@@ -13,8 +13,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import pl.s2devs.person.client.model.Client;
-import pl.s2devs.person.client.repository.ClientRepository;
+import pl.s2devs.person.model.Client;
+import pl.s2devs.person.repository.ClientRepository;
 
 @SpringBootApplication
 public class McServerApplication {

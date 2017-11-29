@@ -1,10 +1,10 @@
-package pl.s2devs.person.client.controller;
+package pl.s2devs.person.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.s2devs.person.client.model.Client;
-import pl.s2devs.person.client.service.ClientService;
+import pl.s2devs.person.model.Client;
+import pl.s2devs.person.service.ClientService;
 import pl.s2devs.shared.response.RegistrationResponse;
 
 import java.util.List;
